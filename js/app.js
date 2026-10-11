@@ -1,11 +1,11 @@
 /* GREET Nursing College — menu, dropdowns, reveals, mailto form
-   SITE_URL: https://faizan00parvez.github.io/greet-nursing-college/
+   SITE_URL: https://www.greetnursingcollege.in/
    Update this constant AND the SITE_URL HTML comment in each page's <head>
    when the custom domain (greetnursingcollege.in) goes live. */
 (function () {
   "use strict";
 
-  var SITE_URL = "https://faizan00parvez.github.io/greet-nursing-college/";
+  var SITE_URL = "https://www.greetnursingcollege.in/";
 
   /* ---------- mobile menu ---------- */
   var toggle = document.getElementById("menuToggle");
