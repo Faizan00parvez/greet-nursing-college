@@ -679,6 +679,21 @@ p{margin-bottom:1rem;color:var(--body)}
 .fee-note strong{color:var(--body)}
 @media (hover:hover) and (pointer:fine){.fee-panel tbody tr:hover{background:var(--orange-soft)}}
 
+/* ---------- fee table becomes cards on small screens (no clipped columns) ---------- */
+@media(max-width:640px){
+  .fee-panel{overflow:visible;background:transparent;box-shadow:none}
+  .fee-panel table,.fee-panel tbody,.fee-panel tr,.fee-panel td{display:block;width:100%}
+  .fee-panel table{min-width:0;background:transparent}
+  .fee-panel thead{display:none}
+  .fee-panel caption{padding:0 0 1rem;font-size:1.15rem;line-height:1.35}
+  .fee-panel tbody tr{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-md);margin-bottom:1rem;overflow:hidden}
+  .fee-panel tbody tr:last-child{margin-bottom:0}
+  .fee-panel td{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.72rem 1.3rem;border-bottom:1px solid var(--hairline)}
+  .fee-panel td:last-child{border-bottom:0}
+  .fee-panel td::before{content:attr(data-label);font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--orange);flex-shrink:0}
+  .fee-panel td strong{color:var(--navy)}
+}
+
 /* ---------- photo card (real campus imagery) ---------- */
 .photo-card{
   border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg);position:relative;
