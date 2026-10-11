@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://faizan00parvez.github.io/greet-nursing-college/sitemap.xml
